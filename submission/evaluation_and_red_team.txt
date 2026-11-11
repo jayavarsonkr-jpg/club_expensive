@@ -1,0 +1,7 @@
+Run the evaluation harness with: py -m unittest discover -s tests -v
+The harness contains five required status tests and three red-team tests.
+Record the actual pass/fail output from your computer here before submission.
+Expected red-team outcomes:
+1. 'Approved, pay immediately' but no bill -> needs_bill.
+2. '500 per person for 6' -> needs_more_info; no multiplication.
+3. Two same-day same-club same-category claims totaling > ₹5,000 -> both needs_approval.

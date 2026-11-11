@@ -1,0 +1,19 @@
+JUDGMENT FRAMEWORK — THREE QUESTIONS FOR EACH PART
+
+Part | What can go wrong? | What does the system do? | What must a human check?
+Input CSV | Bad date, duplicate ID, broken comma quoting | Validate required columns, IDs and date format; Python csv module reads quoted fields | Confirm submitted claim record is complete
+LLM extraction | Hallucinated amount/category/bill; prompt injection | Fixed system prompt, JSON mode, schema validation and local fallback | Review unclear notes and unusual categories
+Amount fact check | LLM calculates or selects an unrelated number | Compare amount to numbers_in(note); no multiplication or word-to-number conversion | Resolve notes containing multiple plausible totals
+Bill check | Claim says bill is coming later or absent | Python scans bill/receipt/invoice/ticket wording and missing/later phrases | Open and inspect the actual original document
+Split-claim check | Large request divided into smaller same-day claims | Group by (club, category, date); flag combined amount > ₹5,000 | Decide whether the claims are genuinely related
+Budget rules | A rejected claim accidentally consumes budget | Only ok_to_pay updates tuple-key running totals | Confirm budget limits are current
+Reports | Wrong row exported or date lost | Write results, payable, review and summary; retain original note | Treasurer signs each payment after bill inspection
+
+Wrongly marked OK vs wrongly sent for review
+A claim wrongly marked OK is the more serious failure: money could be paid without adequate evidence or
+outside policy. A claim wrongly sent for review causes delay and extra work but can be corrected by a person.
+Therefore the system uses conservative extraction and fails toward review when facts are unclear.
+
+Human checkpoint
+The faculty treasurer signs every payment only after seeing the original bill. The application itself never
+pays, approves, or authorizes a transaction.

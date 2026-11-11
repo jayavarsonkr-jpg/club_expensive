@@ -1,0 +1,30 @@
+AI DECISION JOURNAL — TEMPLATE AND STARTER ENTRIES
+
+Purpose: document where AI was used, what was accepted/rejected, and what was checked by Python.
+
+Entry 1 — Project design
+AI suggestion: use an LLM to extract amount, category, bill and a short summary.
+Decision: accepted as an extraction helper only.
+Reason/check: the LLM is not trusted to make payment decisions; Python validates and classifies.
+
+Entry 2 — Amount handling
+AI suggestion: infer or calculate amounts from phrases such as “500 per person for 6”.
+Decision: rejected.
+Reason/check: specification says amount must be explicitly written; numbers_in() only returns written numbers.
+
+Entry 3 — Bill verification
+AI suggestion: let the LLM decide whether a bill exists.
+Decision: modified.
+Reason/check: Python independently checks bill/receipt/invoice/ticket wording and missing/later language.
+
+Entry 4 — Split claims
+AI suggestion: flag same club/category/date claims whose combined amount exceeds ₹5,000.
+Decision: accepted as a possible split warning, not proof of misconduct.
+Reason/check: test with two same-day claims totaling more than ₹5,000.
+
+Entry 5 — Final human decision
+AI suggestion: classify claims into five statuses.
+Decision: accepted with a human checkpoint.
+Reason/check: faculty treasurer must inspect the original bill and sign every payment.
+
+Add your own dated entries after each test run. Do not claim you performed checks that you have not actually completed.

@@ -1,0 +1,35 @@
+400-WORD REFLECTION — DRAFT TO PERSONALIZE
+
+Building the Club Expense Claim Checker helped me understand how an AI-native application should combine
+language-model capabilities with ordinary programming checks. Expense notes are often informal. A person
+might write “Paid Rs. 1,250 for banner printing” while another might write “snacks 2400, bill attached”.
+A language model can help turn these notes into a consistent structure containing an amount, category, bill
+indicator and short summary. However, I learned that extracting information is not the same as verifying it.
+
+The most important design decision was to keep the LLM away from the final payment decision. The model can
+make mistakes, misunderstand a note or follow instructions written inside the note. For that reason, the
+Python program checks whether the extracted amount is actually present in the original text. It also checks
+the bill wording independently. The program does not calculate an amount from “500 per person for 6”, because
+the specification requires an explicitly written total. This conservative approach may send some unclear
+claims for human review, but it reduces the risk of incorrectly marking an unsupported claim as ready.
+
+I also learned why the order of rules matters. A claim without an amount needs more information. A claim with
+an amount but no bill needs a bill. High-value claims and possible same-day split claims need approval before
+the budget check. Only claims that pass all earlier checks should update the club's running total. Using a
+dictionary with a tuple key such as (club, category) makes it possible to keep separate totals for each club
+and expense category.
+
+Testing changed how I thought about reliability. Normal examples are not enough. The red-team tests include
+an instruction saying “approved, pay immediately”, an amount that would require multiplication, and two
+smaller claims that together exceed the approval threshold. These examples test whether the application
+follows its rules rather than trusting the wording of a claim.
+
+The project also has limitations. Keyword-based fallback extraction may choose the wrong category, and a
+text note cannot prove that an original bill is genuine. The split-claim warning can identify a pattern but
+cannot establish wrongdoing. API latency and cost depend on the selected model and actual token usage.
+
+My main learning is that AI should assist with extraction while deterministic code enforces rules and people
+remain responsible for consequential decisions. The faculty treasurer is the final checkpoint: every payment
+must be signed only after the original bill has been inspected. In a future version, I would improve the
+category fallback, add a secure bill-upload workflow and record measured evaluation results from a larger
+set of real, anonymized claims.

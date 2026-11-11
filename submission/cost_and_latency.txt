@@ -1,0 +1,21 @@
+COST AND LATENCY NOTE
+
+Daily volume assumption: 20 claims in one day. The program makes one LLM request per claim, so 20 claims
+require 20 API calls. It does not send one request per category or per output file. If a claim is retried
+manually after an API error, that retry is an additional call.
+
+Latency: planning estimate only — about 1–5 seconds per request, depending on model, provider load,
+network and prompt length. Sequential processing of 20 claims may take roughly 20–100 seconds plus local
+CSV processing. Measure actual timings during the showcase; do not present this estimate as a guarantee.
+
+Cost estimate: depends on the selected model and token usage. Use this formula:
+daily cost = (input tokens / 1,000,000 × current input price per million)
+           + (output tokens / 1,000,000 × current output price per million).
+For example, if a run averages 700 input tokens and 100 output tokens per claim, 20 claims use about
+14,000 input tokens and 2,000 output tokens. Multiply those quantities by the provider's current published
+model prices on the day of the run. Prices can change, and account-specific free credits/rates may apply.
+Record the model name, date checked, measured tokens and actual invoice amount in the final presentation.
+Never claim that an API call is free merely because a free-tier key was used.
+
+Fallback: when the API is unavailable, the program uses local keyword extraction and records the API fallback
+in output/api_fallback_log.txt. Fallback results still pass through Python validation and must be reviewed.

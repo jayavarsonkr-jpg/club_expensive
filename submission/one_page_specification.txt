@@ -1,0 +1,44 @@
+CLUB EXPENSE CLAIM CHECKER — ONE-PAGE SPECIFICATION
+CIT AI-Native Engineering Programme | Semester 1 | Assessment 5
+
+Purpose
+A console-based Python tool sorts club expense claims for faculty review. It does not authorize or make payments.
+
+Inputs
+1. data/claims.csv: id, club, date (YYYY-MM-DD), note; at least 20 rows, sorted by date.
+   Notes containing commas must be quoted by the CSV writer.
+2. data/budgets.csv: category, limit_per_club. The same category limit applies separately to each club.
+
+LLM output
+One JSON object per claim: amount (explicit number or null), category (printing/food/travel/prizes/
+equipment/costumes/other), bill (boolean), summary (10 words or fewer). The LLM must not calculate
+totals or infer amounts from words. The five-role prompt is stored in submission/system_prompt.txt
+and implemented by build_system_prompt().
+
+Independent Python fact checks
+numbers_in() extracts numeric values explicitly written in the note and normalizes thousands commas.
+check_facts() verifies the extracted amount matches a number in the note. Python independently decides
+whether bill/receipt/invoice/ticket evidence exists and rejects missing/later wording. The LLM's bill
+flag is not trusted. A note such as “500 per person for 6” is not multiplied.
+
+Decision rules, in order
+1. Validate extraction and check amount/bill facts.
+2. needs_more_info: no clear explicit amount or extraction/fact check invalid.
+3. needs_bill: no attached/available bill, receipt, invoice or ticket.
+4. needs_approval: amount > ₹5,000, or same club + category + date combined > ₹5,000.
+5. over_budget: adding this otherwise eligible claim would exceed that club's category limit.
+6. ok_to_pay: none of the above; add amount to that club/category running total.
+Only ok_to_pay claims count toward budgets. Tuple keys (club, category) hold running totals.
+
+Outputs
+output/payable.csv (only ok_to_pay), review.csv (all other statuses with original note and reason),
+results.csv (all claims), summary.txt (status counts and club/category spend versus limits).
+
+Edge cases
+No amount; multiple ambiguous numbers; thousands separators; missing or later bill; prompt-injection
+text such as “approved, pay immediately”; amount requiring arithmetic; individual high amount; possible
+same-day split claims; duplicate IDs; invalid dates; unknown categories; API errors; comma-containing notes.
+
+Human checkpoint
+The faculty treasurer inspects the original bill and signs every payment. A split-claim flag is only
+a review signal, not proof of misconduct.

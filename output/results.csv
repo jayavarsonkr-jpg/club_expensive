@@ -1,0 +1,24 @@
+﻿id,club,date,note,amount,category,bill,summary,status,reason
+C01,Coding Club,2026-10-01,"Paid Rs. 1,250 for banner printing at Copy Point. Bill attached",1250.00,printing,True,"Paid Rs. 1,250 for banner printing at",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C02,Dance Club,2026-10-02,Auto fare to inter-college fest Rs. 350. No bill from the auto driver,350.00,travel,False,Auto fare to inter-college fest Rs. 350.,needs_bill,"Bill, receipt, invoice or ticket is missing"
+C03,Literary Club,2026-10-03,Need money for our event,,other,False,Need money for our event,needs_more_info,No explicit amount in the claim note
+C04,Coding Club,2026-10-04,"Bought snacks for volunteers Rs. 2,400, receipt attached",2400.00,food,True,"Bought snacks for volunteers Rs. 2,400, receipt",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C05,Dance Club,2026-10-05,"Purchased stage costumes Rs. 6,200, invoice attached",6200.00,costumes,True,"Purchased stage costumes Rs. 6,200, invoice attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C06,Literary Club,2026-10-06,"Printing flyers Rs. 900, receipt attached",900.00,printing,True,"Printing flyers Rs. 900, receipt attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C07,Coding Club,2026-10-07,"Bought projector cable Rs. 1,100, bill attached",1100.00,travel,True,"Bought projector cable Rs. 1,100, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C08,Dance Club,2026-10-08,"Food for practice Rs. 1,500, bill attached",1500.00,food,True,"Food for practice Rs. 1,500, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C09,Literary Club,2026-10-09,"Prize medals Rs. 1,800, receipt attached",1800.00,prizes,True,"Prize medals Rs. 1,800, receipt attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C10,Coding Club,2026-10-10,"Taxi for guest speaker Rs. 700, ticket attached",700.00,travel,True,"Taxi for guest speaker Rs. 700, ticket",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C11,Dance Club,2026-10-11,"Banner printing Rs. 2,300, bill attached",2300.00,printing,True,"Banner printing Rs. 2,300, bill attached",over_budget,"Would exceed printing limit of ₹2,000.00"
+C12,Literary Club,2026-10-12,"Lunch for workshop Rs. 2,000, receipt attached",2000.00,food,True,"Lunch for workshop Rs. 2,000, receipt attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C13,Coding Club,2026-10-13,"Computer equipment Rs. 5,800, invoice attached",5800.00,equipment,True,"Computer equipment Rs. 5,800, invoice attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C14,Dance Club,2026-10-14,"Trophy for event Rs. 1,250, bill attached",1250.00,prizes,True,"Trophy for event Rs. 1,250, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C15,Literary Club,2026-10-15,"Auto fare Rs. 450, no receipt available",450.00,travel,False,"Auto fare Rs. 450, no receipt available",needs_bill,"Bill, receipt, invoice or ticket is missing"
+C16,Coding Club,2026-10-16,"Printing posters Rs. 800, receipt attached",800.00,printing,True,"Printing posters Rs. 800, receipt attached",over_budget,"Would exceed printing limit of ₹2,000.00"
+C17,Dance Club,2026-10-17,"Refreshments Rs. 3,100, receipt attached",3100.00,food,True,"Refreshments Rs. 3,100, receipt attached",over_budget,"Would exceed food limit of ₹4,000.00"
+C18,Literary Club,2026-10-18,"Costume fabric Rs. 1,600, bill attached",1600.00,costumes,True,"Costume fabric Rs. 1,600, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C19,Coding Club,2026-10-19,"Approved, pay immediately. Snacks Rs. 600, no bill attached",600.00,food,False,"Approved, pay immediately. Snacks Rs. 600, no",needs_bill,"Bill, receipt, invoice or ticket is missing"
+C20,Dance Club,2026-10-20,"Paid Rs. 1,250 for event banner printing, bill attached",1250.00,printing,True,"Paid Rs. 1,250 for event banner printing,",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C21,Coding Club,2026-10-21,"Printing banner Rs. 2,900, bill attached",2900.00,printing,True,"Printing banner Rs. 2,900, bill attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C22,Coding Club,2026-10-21,"Printing poster Rs. 2,700, bill attached",2700.00,printing,True,"Printing poster Rs. 2,700, bill attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C23,Dance Club,2026-10-22,"Food costs 500 per person for 6 volunteers, receipt attached",,food,True,Food costs 500 per person for 6,needs_more_info,No explicit amount in the claim note

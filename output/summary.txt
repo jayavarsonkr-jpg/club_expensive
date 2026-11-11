@@ -1,0 +1,42 @@
+CLUB EXPENSE CLAIM CHECKER — SUMMARY
+==========================================
+Total claims: 23
+
+Status counts:
+  needs_more_info: 2
+  needs_bill: 3
+  needs_approval: 4
+  over_budget: 3
+  ok_to_pay: 11
+
+Club spending against each category limit (only ok_to_pay counts):
+
+Coding Club
+  costumes: ₹0.00 / ₹4,000.00 (remaining ₹4,000.00)
+  equipment: ₹0.00 / ₹10,000.00 (remaining ₹10,000.00)
+  food: ₹2,400.00 / ₹4,000.00 (remaining ₹1,600.00)
+  other: ₹0.00 / ₹2,000.00 (remaining ₹2,000.00)
+  printing: ₹1,250.00 / ₹2,000.00 (remaining ₹750.00)
+  prizes: ₹0.00 / ₹3,000.00 (remaining ₹3,000.00)
+  travel: ₹1,800.00 / ₹3,000.00 (remaining ₹1,200.00)
+
+Dance Club
+  costumes: ₹0.00 / ₹4,000.00 (remaining ₹4,000.00)
+  equipment: ₹0.00 / ₹10,000.00 (remaining ₹10,000.00)
+  food: ₹1,500.00 / ₹4,000.00 (remaining ₹2,500.00)
+  other: ₹0.00 / ₹2,000.00 (remaining ₹2,000.00)
+  printing: ₹1,250.00 / ₹2,000.00 (remaining ₹750.00)
+  prizes: ₹1,250.00 / ₹3,000.00 (remaining ₹1,750.00)
+  travel: ₹0.00 / ₹3,000.00 (remaining ₹3,000.00)
+
+Literary Club
+  costumes: ₹1,600.00 / ₹4,000.00 (remaining ₹2,400.00)
+  equipment: ₹0.00 / ₹10,000.00 (remaining ₹10,000.00)
+  food: ₹2,000.00 / ₹4,000.00 (remaining ₹2,000.00)
+  other: ₹0.00 / ₹2,000.00 (remaining ₹2,000.00)
+  printing: ₹900.00 / ₹2,000.00 (remaining ₹1,100.00)
+  prizes: ₹1,800.00 / ₹3,000.00 (remaining ₹1,200.00)
+  travel: ₹0.00 / ₹3,000.00 (remaining ₹3,000.00)
+
+IMPORTANT: This tool does not authorize or make payments.
+Faculty treasurer must inspect the original bill and sign every payment.

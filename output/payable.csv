@@ -1,0 +1,12 @@
+﻿id,club,date,note,amount,category,bill,summary,status,reason
+C01,Coding Club,2026-10-01,"Paid Rs. 1,250 for banner printing at Copy Point. Bill attached",1250.00,printing,True,"Paid Rs. 1,250 for banner printing at",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C04,Coding Club,2026-10-04,"Bought snacks for volunteers Rs. 2,400, receipt attached",2400.00,food,True,"Bought snacks for volunteers Rs. 2,400, receipt",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C06,Literary Club,2026-10-06,"Printing flyers Rs. 900, receipt attached",900.00,printing,True,"Printing flyers Rs. 900, receipt attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C07,Coding Club,2026-10-07,"Bought projector cable Rs. 1,100, bill attached",1100.00,travel,True,"Bought projector cable Rs. 1,100, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C08,Dance Club,2026-10-08,"Food for practice Rs. 1,500, bill attached",1500.00,food,True,"Food for practice Rs. 1,500, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C09,Literary Club,2026-10-09,"Prize medals Rs. 1,800, receipt attached",1800.00,prizes,True,"Prize medals Rs. 1,800, receipt attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C10,Coding Club,2026-10-10,"Taxi for guest speaker Rs. 700, ticket attached",700.00,travel,True,"Taxi for guest speaker Rs. 700, ticket",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C12,Literary Club,2026-10-12,"Lunch for workshop Rs. 2,000, receipt attached",2000.00,food,True,"Lunch for workshop Rs. 2,000, receipt attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C14,Dance Club,2026-10-14,"Trophy for event Rs. 1,250, bill attached",1250.00,prizes,True,"Trophy for event Rs. 1,250, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C18,Literary Club,2026-10-18,"Costume fabric Rs. 1,600, bill attached",1600.00,costumes,True,"Costume fabric Rs. 1,600, bill attached",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign
+C20,Dance Club,2026-10-20,"Paid Rs. 1,250 for event banner printing, bill attached",1250.00,printing,True,"Paid Rs. 1,250 for event banner printing,",ok_to_pay,Passed automated checks; treasurer must inspect bill and sign

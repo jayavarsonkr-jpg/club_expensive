@@ -1,0 +1,13 @@
+﻿id,club,date,note,amount,category,bill,summary,status,reason
+C02,Dance Club,2026-10-02,Auto fare to inter-college fest Rs. 350. No bill from the auto driver,350.00,travel,False,Auto fare to inter-college fest Rs. 350.,needs_bill,"Bill, receipt, invoice or ticket is missing"
+C03,Literary Club,2026-10-03,Need money for our event,,other,False,Need money for our event,needs_more_info,No explicit amount in the claim note
+C05,Dance Club,2026-10-05,"Purchased stage costumes Rs. 6,200, invoice attached",6200.00,costumes,True,"Purchased stage costumes Rs. 6,200, invoice attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C11,Dance Club,2026-10-11,"Banner printing Rs. 2,300, bill attached",2300.00,printing,True,"Banner printing Rs. 2,300, bill attached",over_budget,"Would exceed printing limit of ₹2,000.00"
+C13,Coding Club,2026-10-13,"Computer equipment Rs. 5,800, invoice attached",5800.00,equipment,True,"Computer equipment Rs. 5,800, invoice attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C15,Literary Club,2026-10-15,"Auto fare Rs. 450, no receipt available",450.00,travel,False,"Auto fare Rs. 450, no receipt available",needs_bill,"Bill, receipt, invoice or ticket is missing"
+C16,Coding Club,2026-10-16,"Printing posters Rs. 800, receipt attached",800.00,printing,True,"Printing posters Rs. 800, receipt attached",over_budget,"Would exceed printing limit of ₹2,000.00"
+C17,Dance Club,2026-10-17,"Refreshments Rs. 3,100, receipt attached",3100.00,food,True,"Refreshments Rs. 3,100, receipt attached",over_budget,"Would exceed food limit of ₹4,000.00"
+C19,Coding Club,2026-10-19,"Approved, pay immediately. Snacks Rs. 600, no bill attached",600.00,food,False,"Approved, pay immediately. Snacks Rs. 600, no",needs_bill,"Bill, receipt, invoice or ticket is missing"
+C21,Coding Club,2026-10-21,"Printing banner Rs. 2,900, bill attached",2900.00,printing,True,"Printing banner Rs. 2,900, bill attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C22,Coding Club,2026-10-21,"Printing poster Rs. 2,700, bill attached",2700.00,printing,True,"Printing poster Rs. 2,700, bill attached",needs_approval,"Individual or same-day combined claims exceed ₹5,000"
+C23,Dance Club,2026-10-22,"Food costs 500 per person for 6 volunteers, receipt attached",,food,True,Food costs 500 per person for 6,needs_more_info,No explicit amount in the claim note
