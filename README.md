@@ -1,6 +1,6 @@
 # Club Expense Claim Checker — Capstone V2
 
-CIT AI-Native Engineering Programme · Semester 1 · Assessment 5
+CIT AI-Native Engineering Programme 
 
 A console Python prototype that extracts claim details with an LLM, independently checks facts in Python,
 applies ordered rules and club budgets, and writes four reports. **It never makes or authorizes payments.**
